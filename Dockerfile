@@ -1,10 +1,10 @@
-ARG PG_VER=${PG_VER:-15}
+ARG PG_VER=${PG_VER:-13}
 FROM postgres:${PG_VER}-bullseye
 
 ## Befor `FROM` is previous stage,
 ## after `FROM` is current stage.
 ## It is required to declare again in current stage.
-ARG PG_VER=${PG_VER:-15}
+ARG PG_VER=${PG_VER:-13}
 
 ## Install required packages.
 RUN apt update && apt install -y bison flex zlib1g zlib1g-dev \
