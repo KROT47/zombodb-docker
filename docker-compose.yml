@@ -1,15 +1,14 @@
 ## this is a sample docker compose configuration
-
 ---
 version: '3'
 
 services:
   postgres:
-    image: hqiasjehrlb/postgres-zombodb:latest
+    image: dldldldl/zombodb:latest
     build:
       context: .
       dockerfile: Dockerfile
-      ## PG_VER is optional, default value: 15
+      ## PG_VER is optional, default value: 13
       # args:
       #   PG_VER: '12'
     environment:
